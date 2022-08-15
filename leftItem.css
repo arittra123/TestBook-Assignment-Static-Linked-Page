@@ -1,0 +1,259 @@
+:root {
+  --bodyColor: #ffffff;
+  --lightGrey: rgb(135, 135, 135);
+  --horizontalLine: rgb(235, 233, 233);
+  --countColor: rgb(58, 58, 227);
+  --divHover: rgb(232, 232, 232);
+  --navlinkcolor: rgb(121, 121, 121);
+}
+
+.leftContent1 {
+  background-color: var(--bodyColor);
+  border: 1.5px solid var(--horizontalLine);
+  border-radius: 8px;
+}
+
+.profileCoverPhoto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* border: 1px solid green; */
+  position: relative;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.profileCover {
+  width: 100%;
+  height: 65px;
+  /* background-color: var(--bodyColor); */
+  background-image: url("./images/kpit-technologies.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+}
+
+.profilePhotoContainer {
+  /* border: 1px solid gold; */
+  position: absolute;
+  top: 30px;
+  border-radius: 70px;
+  padding: 2px;
+  background-color: var(--bodyColor);
+}
+
+.profilePhoto {
+  width: 70px;
+  height: 70px;
+  border-radius: 70px;
+  /* background-color: var(--bodyColor); */
+  background-image: url("./images//profilePic.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.profileContent {
+  /* border: 1px solid gold; */
+  margin-top: 58px;
+  width: 100%;
+}
+
+.profileContent label {
+  display: block;
+  text-align: center;
+  font-weight: 500;
+}
+
+.nameDesc p {
+  color: var(--lightGrey);
+  text-align: center;
+  font-size: 12px;
+  margin-top: 8px;
+  padding-bottom: 16px;
+}
+
+.horizontalLine {
+  background-color: var(--horizontalLine);
+  width: 100%;
+  height: 1px;
+}
+
+.connection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 12px;
+  padding: 4px 12px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.connection:hover {
+  background-color: var(--divHover);
+}
+
+.connectionsView p {
+  color: var(--lightGrey);
+}
+
+.connectionsView {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.connectionsView span {
+  display: inline-block;
+  color: var(--countColor);
+}
+
+.leftSubElement1 {
+  padding: 12px 0px;
+  border-top: 1.5px solid var(--horizontalLine);
+}
+
+.profileView {
+  display: flex;
+  align-items: center;
+  margin-top: 4px;
+  justify-content: space-between;
+  padding: 4px 12px;
+  font-size: 12px;
+  color: var(--lightGrey);
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.profileView span {
+  display: inline-block;
+  color: var(--countColor);
+}
+
+.profileView:hover {
+  background-color: var(--divHover);
+}
+
+.leftSubElement2 {
+  padding: 12px;
+  border-top: 1.5px solid var(--horizontalLine);
+  cursor: pointer;
+}
+
+.leftSubElement2:hover {
+  background-color: var(--divHover);
+}
+
+.leftSubElement2 p:first-child {
+  font-size: 12px;
+  color: var(--lightGrey);
+}
+
+.getHiredDiv {
+  display: flex;
+  align-items: center;
+}
+
+.getHiredDiv p {
+  font-weight: 500;
+  font-size: 12px;
+  margin-left: 4px;
+}
+
+.leftSubElement3 {
+  border-top: 1.5px solid var(--horizontalLine);
+  padding: 12px 0px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  cursor: pointer;
+}
+
+.leftSubElement3:hover {
+  background-color: var(--divHover);
+}
+
+.myItems {
+  display: flex;
+  padding: 0px 12px;
+  align-items: center;
+}
+
+.myItems svg {
+  color: var(--navlinkcolor);
+}
+
+.myItems p {
+  font-size: 12px;
+  font-weight: 500;
+  margin-left: 4px;
+}
+
+.leftContent2 {
+  border: 1.5px solid var(--horizontalLine);
+  border-radius: 8px;
+  margin-top: 6px;
+  font-size: 12px;
+  background-color: var(--bodyColor);
+  position: sticky;
+  top: 24px;
+}
+
+.leftContent2Element1 {
+  padding: 12px 0px;
+}
+
+.leftContent2Element1 a {
+  text-decoration: none;
+  width: 100%;
+  display: block;
+  font-weight: 500;
+  color: var(--countColor);
+  padding: 8px 0px 8px 12px;
+}
+
+.leftContent2Element1 a:hover {
+  text-decoration: underline;
+}
+
+.addEvents {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.addEvents i {
+  padding: 8px;
+  border-radius: 16px;
+  font-size: 14px;
+  color: var(--navlinkcolor);
+  cursor: pointer;
+  transition: all 0.2s ease-in;
+}
+
+.addEvents i:hover {
+  background-color: #ccc;
+  color: black;
+}
+
+.leftContent2Element2 {
+  padding: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--navlinkcolor);
+  border-top: 1.5px solid var(--horizontalLine);
+  cursor: pointer;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  position: relative;
+  top: 0.5px;
+}
+
+.leftContent2Element2:hover {
+  background-color: var(--divHover);
+}

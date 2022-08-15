@@ -1,0 +1,350 @@
+:root {
+  --bodyColor: #ffffff;
+  --lightGrey: rgb(135, 135, 135);
+  --countColor: rgb(58, 58, 227);
+  --divHover: rgb(232, 232, 232);
+  --navlinkcolor: rgb(121, 121, 121);
+  --searchBoxTextColor: rgba(0, 0, 0, 0.6);
+  --searchBoxBoder: rgba(0, 0, 0, 0.3);
+  --photoPostColor: #378fe9;
+  --videoPostColor: #5f9b41;
+  --eventPostColor: #c37d16;
+  --writeArticlePostColor: #e16745;
+  --sortbyDividerColor: rgba(0, 0, 0, 0.08);
+  --highlightColor: rgba(0, 0, 0, 0.9);
+  --followOptionColor: #0a66c2;
+  --folloHoverColor: #eef6fe;
+}
+
+.mt-6 {
+  margin: 6px;
+}
+
+.createPostContainer {
+  border: 1.5px solid var(--);
+  border-radius: 8px;
+  padding: 12px 12px 4px 12px;
+  background-color: var(--bodyColor);
+}
+
+.searchPost {
+  display: flex;
+  justify-content: space-between;
+}
+
+.postProfilePic {
+  width: 48px;
+  height: 48px;
+  /* border: 1px solid black; */
+  border-radius: 48px;
+  background-image: url("./images/profilePic.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.searchPost input {
+  width: 88%;
+  border-radius: 35px;
+  border: 1px solid var(--searchBoxBoder);
+  cursor: pointer;
+  font-size: 14px;
+  outline: none;
+  padding-left: 16px;
+}
+
+.searchPost input::placeholder {
+  color: var(--searchBoxTextColor);
+  font-weight: 600;
+}
+
+.searchPost input:hover {
+  background-color: var(--divHover);
+}
+
+.postOptions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 4px;
+}
+
+.postOptions p {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--navlinkcolor);
+  margin-left: 12px;
+}
+
+.postOption1,
+.postOption2,
+.postOption3,
+.postOption4 {
+  display: flex;
+  align-items: center;
+  border-radius: 4px;
+  padding: 12px;
+  cursor: pointer;
+  transition: background-color 0.1s ease-in;
+}
+
+.postOption1:hover {
+  background-color: var(--divHover);
+}
+
+.postOption2:hover {
+  background-color: var(--divHover);
+}
+
+.postOption3:hover {
+  background-color: var(--divHover);
+}
+
+.postOption4:hover {
+  background-color: var(--divHover);
+}
+
+.postOption1 svg {
+  color: var(--photoPostColor);
+}
+
+.postOption2 svg {
+  color: var(--videoPostColor);
+}
+
+.postOption3 svg {
+  color: var(--eventPostColor);
+}
+
+.postOption4 svg {
+  color: var(--writeArticlePostColor);
+}
+
+.sortby {
+  padding: 8px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.sortbyDivider {
+  width: 83%;
+  height: 1.34px;
+  background-color: rgba(0, 0, 0, 0.15);
+}
+
+.sortbyOption {
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  color: var(--navlinkcolor);
+}
+
+.sortbyOption span {
+  font-weight: 500;
+  margin-right: 2px;
+}
+
+.sortbyOption span,
+.sortbyOption svg {
+  color: var(--highlightColor);
+}
+
+.post {
+  border: 1.5px solid var(--horizontalLine);
+  border-radius: 8px;
+  background-color: var(--bodyColor);
+  width: 100%;
+}
+
+.postHead {
+  /* border: 1px solid black; */
+  display: flex;
+  align-items: center;
+  padding: 12px;
+  justify-content: space-between;
+}
+
+.postProfilePhoto {
+  min-width: 48px;
+  min-height: 48px;
+  max-height: 48px;
+  border-radius: 50%;
+  background-image: url("./images/profilePic.png");
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
+}
+
+.postProfile {
+  /* border: 1px solid black; */
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.followOption {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0px 8px;
+  border-radius: 4px;
+  font-weight: 500;
+  color: var(--followOptionColor);
+  cursor: pointer;
+}
+
+.followOption:hover {
+  background-color: var(--folloHoverColor);
+}
+
+.followOption span {
+  font-size: 22px;
+  margin-right: 2px;
+}
+
+.postProfileName {
+  display: block;
+  /* border: 1px solid black; */
+  font-size: 14px;
+  color: var(--highlightColor);
+  font-weight: 500;
+}
+
+.postProfileName span {
+  color: var(--lightGrey);
+  font-weight: 400;
+}
+
+.postProfileShortDescription {
+  font-size: 12px;
+  color: var(--lightGrey);
+}
+
+.postTime {
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  color: var(--lightGrey);
+}
+
+.postDescription {
+  font-size: 14px;
+  padding: 0px 12px 12px 12px;
+  color: var(--highlightColor);
+}
+
+.postDescription a {
+  font-weight: 500;
+  color: var(--followOptionColor);
+  text-decoration: none;
+}
+
+.postDescription a:hover {
+  text-decoration: underline;
+}
+
+.postContent {
+  height: 350px;
+}
+
+.postImg {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.postDetails {
+  cursor: pointer;
+  padding: 8px 12px;
+  background-color: var(--folloHoverColor);
+}
+
+.postDetails p {
+  font-size: 14px;
+  color: var(--highlightColor);
+  font-weight: 500;
+}
+
+.postDetails span {
+  font-size: 12px;
+  color: var(--lightGrey);
+}
+
+.likeCommentShareCount {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 12px;
+}
+
+.reactionOptionsLogos {
+  display: flex;
+}
+
+.noOfReactors {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  font-size: 12px;
+  color: var(--lightGrey);
+  justify-content: space-between;
+}
+
+.reactionImg2 {
+  background-color: var(--bodyColor);
+  border-radius: 50%;
+  position: relative;
+  right: 4px;
+}
+
+.reactionImg3 {
+  background-color: var(--bodyColor);
+  border-radius: 50%;
+  position: relative;
+  right: 8px;
+}
+
+.reactionOptions {
+  display: flex;
+  padding: 4px 12px;
+  justify-content: space-between;
+}
+
+.reactionOptions p {
+  margin-left: 4px;
+}
+
+.likeReaction,
+.commentsReaction,
+.shareReaction,
+.sendReaction {
+  display: flex;
+  align-items: center;
+  /* border: 1px solid black; */
+  padding: 10px 26px;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.likeReaction:hover {
+  background-color: var(--divHover);
+}
+
+.commentsReaction:hover {
+  background-color: var(--divHover);
+}
+
+.shareReaction:hover {
+  background-color: var(--divHover);
+}
+
+.sendReaction:hover {
+  background-color: var(--divHover);
+}
+
+.horizontalLineContainer {
+  padding: 0px 12px;
+}

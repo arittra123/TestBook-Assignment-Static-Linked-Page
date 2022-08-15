@@ -1,0 +1,898 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--Favicon-->
+    <link rel="icon" type="image/x-icon" href="/images/linkedLogo.png" />
+
+    <!--Include Css Files-->
+    <link rel="stylesheet" href="./_utilities.css" />
+    <link rel="stylesheet" href="./nav.css" />
+    <link rel="stylesheet" href="./leftItem.css" />
+    <link rel="stylesheet" href="./middleItem.css" />
+    <link rel="stylesheet" href="./rightItem.css" />
+    <link rel="stylesheet" href="./MeDrpDown.css" />
+
+    <!--Include Fontawesome-->
+    <script
+      src="https://kit.fontawesome.com/5544926563.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <title>Feed | LinkedIn</title>
+  </head>
+  <body>
+    <!--Nav Bar Start-->
+    <nav>
+      <div class="navItems">
+        <div class="searchbar">
+          <div class="linkedLogo">
+            <img
+              src="./images/linkedLogo.png"
+              width="100%"
+              height="100%"
+              alt="logo.png"
+            />
+          </div>
+          <div class="searchLogo">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+          <input type="text" id="search" placeholder="Search" />
+        </div>
+        <div class="navContent">
+          <div class="navItem">
+            <ul>
+              <li>
+                <a href="#" class="linkActive"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    data-supported-dps="24x24"
+                    fill="currentColor"
+                    class="mercado-match"
+                    width="24"
+                    height="24"
+                    focusable="false"
+                  >
+                    <path
+                      d="M23 9v2h-2v7a3 3 0 01-3 3h-4v-6h-4v6H6a3 3 0 01-3-3v-7H1V9l11-7 5 3.18V2h3v5.09z"
+                    ></path></svg
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    data-supported-dps="24x24"
+                    fill="currentColor"
+                    class="mercado-match"
+                    width="24"
+                    height="24"
+                    focusable="false"
+                  >
+                    <path
+                      d="M12 16v6H3v-6a3 3 0 013-3h3a3 3 0 013 3zm5.5-3A3.5 3.5 0 1014 9.5a3.5 3.5 0 003.5 3.5zm1 2h-2a2.5 2.5 0 00-2.5 2.5V22h7v-4.5a2.5 2.5 0 00-2.5-2.5zM7.5 2A4.5 4.5 0 1012 6.5 4.49 4.49 0 007.5 2z"
+                    ></path></svg
+                  >My Network</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    data-supported-dps="24x24"
+                    fill="currentColor"
+                    class="mercado-match"
+                    width="24"
+                    height="24"
+                    focusable="false"
+                  >
+                    <path
+                      d="M17 6V5a3 3 0 00-3-3h-4a3 3 0 00-3 3v1H2v4a3 3 0 003 3h14a3 3 0 003-3V6zM9 5a1 1 0 011-1h4a1 1 0 011 1v1H9zm10 9a4 4 0 003-1.38V17a3 3 0 01-3 3H5a3 3 0 01-3-3v-4.38A4 4 0 005 14z"
+                    ></path></svg
+                  >Jobs</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    data-supported-dps="24x24"
+                    fill="currentColor"
+                    class="mercado-match"
+                    width="24"
+                    height="24"
+                    focusable="false"
+                  >
+                    <path
+                      d="M16 4H8a7 7 0 000 14h4v4l8.16-5.39A6.78 6.78 0 0023 11a7 7 0 00-7-7zm-8 8.25A1.25 1.25 0 119.25 11 1.25 1.25 0 018 12.25zm4 0A1.25 1.25 0 1113.25 11 1.25 1.25 0 0112 12.25zm4 0A1.25 1.25 0 1117.25 11 1.25 1.25 0 0116 12.25z"
+                    ></path></svg
+                  >Messaging</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    data-supported-dps="24x24"
+                    fill="currentColor"
+                    class="mercado-match"
+                    width="24"
+                    height="24"
+                    focusable="false"
+                  >
+                    <path
+                      d="M22 19h-8.28a2 2 0 11-3.44 0H2v-1a4.52 4.52 0 011.17-2.83l1-1.17h15.7l1 1.17A4.42 4.42 0 0122 18zM18.21 7.44A6.27 6.27 0 0012 2a6.27 6.27 0 00-6.21 5.44L5 13h14z"
+                    ></path></svg
+                  >Notifications</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="profileDrDown">
+            <div class="profile">
+              <div class="profilePic"></div>
+              <div class="profileOptions">
+                Me
+                <i class="fa-solid fa-caret-down"></i>
+              </div>
+            </div>
+            <div class="MedrpDown">
+              <div class="viewProfile-NavBar">
+                <div class="navBarProfilePhoto"></div>
+                <div class="navBar-profile-description">
+                  <div class="navBarProfileName">Arittra Mishra</div>
+                  <div class="navBarProfileCollege">
+                    <p>
+                      Student at Kalinga Institute of Industrial Technology,
+                      Bhubaneswar
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="navBarViewProfileBtn">
+                <p>View Profile</p>
+              </div>
+              <div class="horizontalLineContainer">
+                <div class="horizontalLine"></div>
+              </div>
+              <div class="MeDrpDownAccount">
+                <div class="MeDrpDownAccount-Head">
+                  <p>Account</p>
+                </div>
+                <div class="MeDrpDownAccount-tryPremium">
+                  <a href="#"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      data-supported-dps="24x24"
+                      class="mercado-match"
+                      width="16"
+                      height="16"
+                      focusable="false"
+                    >
+                      <path
+                        d="M20 20a3.36 3.36 0 001-2.39V6.38A3.38 3.38 0 0017.62 3H6.38A3.36 3.36 0 004 4z"
+                        fill="#f8c77e"
+                      ></path>
+                      <path
+                        d="M4 4a3.36 3.36 0 00-1 2.38v11.24A3.38 3.38 0 006.38 21h11.24A3.36 3.36 0 0020 20z"
+                        fill="#e7a33e"
+                      ></path>
+                    </svg>
+                    <p>Try Premium for free</p></a
+                  >
+                </div>
+                <div class="MeDrpDownAccount-options">
+                  <a href="#">Settings & Privacy</a>
+                  <a href="#">Help</a>
+                  <a href="#">Language</a>
+                </div>
+              </div>
+              <div class="MeDrpDown-Manage">
+                <div class="MeDrpDownAccount-Head">
+                  <p>Manage</p>
+                </div>
+                <div class="MeDrpDownAccount-options">
+                  <a href="#">Posts & Activity</a>
+                  <a href="#">Job Posting Account</a>
+                </div>
+              </div>
+              <div class="MeDrpDown-signOut"><a href="#">Sign Out</a></div>
+            </div>
+          </div>
+
+          <div class="verticalLine"></div>
+          <div class="work">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              data-supported-dps="24x24"
+              fill="currentColor"
+              class="mercado-match"
+              width="24"
+              height="24"
+              focusable="false"
+            >
+              <path
+                d="M3 3h4v4H3zm7 4h4V3h-4zm7-4v4h4V3zM3 14h4v-4H3zm7 0h4v-4h-4zm7 0h4v-4h-4zM3 21h4v-4H3zm7 0h4v-4h-4zm7 0h4v-4h-4z"
+              ></path>
+            </svg>
+            <div class="workOption">
+              Work <i class="fa-solid fa-caret-down"></i>
+            </div>
+          </div>
+          <div class="getHired">
+            <a href="#"
+              ><p>Get Hired Faster,<br />Try Premium Free</p></a
+            >
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!--Nav Bar End-->
+
+    <div class="bodyContainer">
+      <div class="bodyContent">
+        <section class="left">
+          <div class="leftContent1">
+            <div class="profileCoverPhoto">
+              <div class="profileCover"></div>
+              <div class="profilePhotoContainer">
+                <div class="profilePhoto"></div>
+              </div>
+            </div>
+            <div class="profileContent">
+              <div class="nameDesc">
+                <label>Arittra Mishra</label>
+                <p>
+                  Student at Kalinga Institute of Industrial Technology,
+                  Bhubaneswar
+                </p>
+              </div>
+
+              <div class="leftSubElement1">
+                <div class="connection">
+                  <div class="connectionsView">
+                    <p>Connections</p>
+                    <span>58</span>
+                  </div>
+                  <p>Grow your network</p>
+                </div>
+                <div class="profileView">
+                  <p>Who's viewed your profile</p>
+                  <span>22</span>
+                </div>
+              </div>
+
+              <div class="leftSubElement2">
+                <p>Access exclusive tools & insights</p>
+                <div class="getHiredDiv">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    data-supported-dps="24x24"
+                    class="mercado-match"
+                    width="16"
+                    height="16"
+                    focusable="false"
+                  >
+                    <path
+                      d="M20 20a3.36 3.36 0 001-2.39V6.38A3.38 3.38 0 0017.62 3H6.38A3.36 3.36 0 004 4z"
+                      fill="#f8c77e"
+                    ></path>
+                    <path
+                      d="M4 4a3.36 3.36 0 00-1 2.38v11.24A3.38 3.38 0 006.38 21h11.24A3.36 3.36 0 0020 20z"
+                      fill="#e7a33e"
+                    ></path>
+                  </svg>
+                  <p>Get Hired Faster, Try Premium <br />Free</p>
+                </div>
+              </div>
+
+              <div class="leftSubElement3">
+                <div class="myItems">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 16 16"
+                    data-supported-dps="16x16"
+                    fill="currentColor"
+                    width="16"
+                    height="16"
+                    focusable="false"
+                  >
+                    <path
+                      d="M12 1H4a1 1 0 00-1 1v13.64l5-3.36 5 3.36V2a1 1 0 00-1-1z"
+                    ></path>
+                  </svg>
+                  <p>My items</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="leftContent2">
+            <div class="leftContent2Element1">
+              <a href="#">Groups</a>
+              <div class="addEvents">
+                <a href="#">Events</a>
+                <i class="fa-solid fa-plus"></i>
+              </div>
+              <a href="#">Followed Hashtags</a>
+            </div>
+            <div class="leftContent2Element2">
+              <p>Discover more</p>
+            </div>
+          </div>
+        </section>
+        <section class="middle">
+          <div class="createPostContainer">
+            <div class="searchPost">
+              <div class="postProfilePic"></div>
+              <input type="text" placeholder="Start a post" />
+            </div>
+            <div class="postOptions">
+              <div class="postOption1">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  data-supported-dps="24x24"
+                  fill="currentColor"
+                  class="mercado-match"
+                  width="24"
+                  height="24"
+                  focusable="false"
+                >
+                  <path
+                    d="M19 4H5a3 3 0 00-3 3v10a3 3 0 003 3h14a3 3 0 003-3V7a3 3 0 00-3-3zm1 13a1 1 0 01-.29.71L16 14l-2 2-6-6-4 4V7a1 1 0 011-1h14a1 1 0 011 1zm-2-7a2 2 0 11-2-2 2 2 0 012 2z"
+                  ></path>
+                </svg>
+                <p>Photo</p>
+              </div>
+              <div class="postOption2">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  data-supported-dps="24x24"
+                  fill="currentColor"
+                  class="mercado-match"
+                  width="24"
+                  height="24"
+                  focusable="false"
+                >
+                  <path
+                    d="M19 4H5a3 3 0 00-3 3v10a3 3 0 003 3h14a3 3 0 003-3V7a3 3 0 00-3-3zm-9 12V8l6 4z"
+                  ></path>
+                </svg>
+                <p>Video</p>
+              </div>
+              <div class="postOption3">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  data-supported-dps="24x24"
+                  fill="currentColor"
+                  class="mercado-match"
+                  width="24"
+                  height="24"
+                  focusable="false"
+                >
+                  <path
+                    d="M3 3v15a3 3 0 003 3h12a3 3 0 003-3V3zm13 1.75A1.25 1.25 0 1114.75 6 1.25 1.25 0 0116 4.75zm-8 0A1.25 1.25 0 116.75 6 1.25 1.25 0 018 4.75zM19 18a1 1 0 01-1 1H6a1 1 0 01-1-1V9h14zm-5.9-3a1 1 0 00-1-1H12a3.12 3.12 0 00-1 .2l-1-.2v-3h3.9v1H11v1.15a3.7 3.7 0 011.05-.15 1.89 1.89 0 012 1.78V15a1.92 1.92 0 01-1.84 2H12a1.88 1.88 0 01-2-1.75 1 1 0 010-.25h1a.89.89 0 001 1h.1a.94.94 0 001-.88z"
+                  ></path>
+                </svg>
+                <p>Event</p>
+              </div>
+              <div class="postOption4">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  data-supported-dps="24x24"
+                  fill="currentColor"
+                  class="mercado-match"
+                  width="24"
+                  height="24"
+                  focusable="false"
+                >
+                  <path
+                    d="M21 3v2H3V3zm-6 6h6V7h-6zm0 4h6v-2h-6zm0 4h6v-2h-6zM3 21h18v-2H3zM13 7H3v10h10z"
+                  ></path>
+                </svg>
+                <p>Write article</p>
+              </div>
+            </div>
+          </div>
+          <div class="sortby">
+            <div class="sortbyDivider"></div>
+            <div class="sortbyOption">
+              <p>Sort by: <span>Top</span></p>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 16 16"
+                data-supported-dps="16x16"
+                fill="currentColor"
+                class="mercado-match"
+                width="16"
+                height="16"
+                focusable="false"
+              >
+                <path d="M8 11L3 6h10z" fill-rule="evenodd"></path>
+              </svg>
+            </div>
+          </div>
+          <div class="posts">
+            <!--Post1 Start-->
+            <div class="post">
+              <div class="postHead">
+                <div class="postProfilePhoto"></div>
+                <div class="postProfile">
+                  <span class="postProfileName"
+                    >Roopa Karemungikar
+                    <span class="postProfileExperience"
+                      >&#8226; 3rd+</span
+                    ></span
+                  >
+                  <span class="postProfileShortDescription"
+                    >Enterpreneur, Global Vice President Customer Success,
+                    Product Exp..</span
+                  >
+                  <span class="postTime"
+                    >13h &#8226;&nbsp;
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 16 16"
+                      data-supported-dps="16x16"
+                      fill="currentColor"
+                      class="mercado-match"
+                      width="16"
+                      height="16"
+                      focusable="false"
+                    >
+                      <path
+                        d="M8 1a7 7 0 107 7 7 7 0 00-7-7zM3 8a5 5 0 011-3l.55.55A1.5 1.5 0 015 6.62v1.07a.75.75 0 00.22.53l.56.56a.75.75 0 00.53.22H7v.69a.75.75 0 00.22.53l.56.56a.75.75 0 01.22.53V13a5 5 0 01-5-5zm6.24 4.83l2-2.46a.75.75 0 00.09-.8l-.58-1.16A.76.76 0 0010 8H7v-.19a.51.51 0 01.28-.45l.38-.19a.74.74 0 01.68 0L9 7.5l.38-.7a1 1 0 00.12-.48v-.85a.78.78 0 01.21-.53l1.07-1.09a5 5 0 01-1.54 9z"
+                      ></path></svg
+                  ></span>
+                </div>
+                <div class="followOption"><span>+</span>Follow</div>
+              </div>
+              <div class="postDescription">
+                <p>
+                  We are delighted to share that we have yet again reported
+                  double-digit revenue growth. Here's what Aiman Ezzat, CEO,
+                  Capgemini, has to say about our strong and consistent gain:
+                  <a href="#">https://bit.ly/3d2Q9sp</a>
+                </p>
+              </div>
+              <div class="postContent">
+                <img src="./images/postImg.jpg" class="postImg" />
+              </div>
+              <div class="postDetails">
+                <p>Capgemini reports 22.7% revenue growth, increases growth</p>
+                <span>thehindubusinessline.com &#8226; 2 min read</span>
+              </div>
+
+              <div class="likeCommentShareCount">
+                <div class="reactionOptionsLogos">
+                  <img
+                    class="reactionImg1 reactions-icon social-detail-social-counts__count-icon social-detail-social-counts__count-icon--0 reactions-icon__consumption--small data-test-reactions-icon-type-LIKE data-test-reactions-icon-theme-light"
+                    src="https://static-exp1.licdn.com/sc/h/8ekq8gho1ruaf8i7f86vd1ftt"
+                    alt="like"
+                    data-test-reactions-icon-type="LIKE"
+                    data-test-reactions-icon-theme="light"
+                  />
+
+                  <img
+                    class="reactionImg2 reactions-icon social-detail-social-counts__count-icon social-detail-social-counts__count-icon--1 reactions-icon__consumption--small reactions-icon--stacked data-test-reactions-icon-type-PRAISE data-test-reactions-icon-theme-light"
+                    src="https://static-exp1.licdn.com/sc/h/b1dl5jk88euc7e9ri50xy5qo8"
+                    alt="celebrate"
+                    data-test-reactions-icon-type="PRAISE"
+                    data-test-reactions-icon-theme="light"
+                  />
+
+                  <img
+                    class="reactionImg3 reactions-icon social-detail-social-counts__count-icon social-detail-social-counts__count-icon--2 reactions-icon__consumption--small reactions-icon--stacked data-test-reactions-icon-type-EMPATHY data-test-reactions-icon-theme-light"
+                    src="https://static-exp1.licdn.com/sc/h/cpho5fghnpme8epox8rdcds22"
+                    alt="love"
+                    data-test-reactions-icon-type="EMPATHY"
+                    data-test-reactions-icon-theme="light"
+                  />
+                </div>
+                <div class="noOfReactors">
+                  <p>Pooja Landage and 1,136 others</p>
+                  <p>5 comments &#8226; 4 shares</p>
+                </div>
+              </div>
+
+              <div class="horizontalLineContainer">
+                <div class="horizontalLine"></div>
+              </div>
+
+              <div class="reactionOptions">
+                <div class="likeReaction">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    data-supported-dps="24x24"
+                    fill="currentColor"
+                    class="mercado-match"
+                    width="24"
+                    height="24"
+                    focusable="false"
+                  >
+                    <path
+                      d="M19.46 11l-3.91-3.91a7 7 0 01-1.69-2.74l-.49-1.47A2.76 2.76 0 0010.76 1 2.75 2.75 0 008 3.74v1.12a9.19 9.19 0 00.46 2.85L8.89 9H4.12A2.12 2.12 0 002 11.12a2.16 2.16 0 00.92 1.76A2.11 2.11 0 002 14.62a2.14 2.14 0 001.28 2 2 2 0 00-.28 1 2.12 2.12 0 002 2.12v.14A2.12 2.12 0 007.12 22h7.49a8.08 8.08 0 003.58-.84l.31-.16H21V11zM19 19h-1l-.73.37a6.14 6.14 0 01-2.69.63H7.72a1 1 0 01-1-.72l-.25-.87-.85-.41A1 1 0 015 17l.17-1-.76-.74A1 1 0 014.27 14l.66-1.09-.73-1.1a.49.49 0 01.08-.7.48.48 0 01.34-.11h7.05l-1.31-3.92A7 7 0 0110 4.86V3.75a.77.77 0 01.75-.75.75.75 0 01.71.51L12 5a9 9 0 002.13 3.5l4.5 4.5H19z"
+                    ></path>
+                  </svg>
+                  <p>Like</p>
+                </div>
+                <div class="commentsReaction">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    data-supported-dps="24x24"
+                    fill="currentColor"
+                    class="mercado-match"
+                    width="24"
+                    height="24"
+                    focusable="false"
+                  >
+                    <path
+                      d="M7 9h10v1H7zm0 4h7v-1H7zm16-2a6.78 6.78 0 01-2.84 5.61L12 22v-4H8A7 7 0 018 4h8a7 7 0 017 7zm-2 0a5 5 0 00-5-5H8a5 5 0 000 10h6v2.28L19 15a4.79 4.79 0 002-4z"
+                    ></path>
+                  </svg>
+                  <p>Comment</p>
+                </div>
+                <div class="shareReaction">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    data-supported-dps="24x24"
+                    fill="currentColor"
+                    class="mercado-match"
+                    width="24"
+                    height="24"
+                    focusable="false"
+                  >
+                    <path
+                      d="M23 12l-4.61 7H16l4-6H8a3.92 3.92 0 00-4 3.84V17a4 4 0 00.19 1.24L5.12 21H3l-.73-2.22A6.4 6.4 0 012 16.94 6 6 0 018 11h12l-4-6h2.39z"
+                    ></path>
+                  </svg>
+                  <p>Share</p>
+                </div>
+                <div class="sendReaction">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    data-supported-dps="24x24"
+                    fill="currentColor"
+                    class="mercado-match"
+                    width="24"
+                    height="24"
+                    focusable="false"
+                  >
+                    <path
+                      d="M21 3L0 10l7.66 4.26L16 8l-6.26 8.34L14 24l7-21z"
+                    ></path>
+                  </svg>
+                  <p>Send</p>
+                </div>
+              </div>
+            </div>
+
+            <!--Post2 Start-->
+            <div class="post mt-6" style="margin-left: 0px">
+              <div class="postHead">
+                <div class="postProfilePhoto"></div>
+                <div class="postProfile">
+                  <span class="postProfileName"
+                    >Roopa Karemungikar
+                    <span class="postProfileExperience"
+                      >&#8226; 3rd+</span
+                    ></span
+                  >
+                  <span class="postProfileShortDescription"
+                    >Enterpreneur, Global Vice President Customer Success,
+                    Product Exp..</span
+                  >
+                  <span class="postTime"
+                    >13h &#8226;&nbsp;
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 16 16"
+                      data-supported-dps="16x16"
+                      fill="currentColor"
+                      class="mercado-match"
+                      width="16"
+                      height="16"
+                      focusable="false"
+                    >
+                      <path
+                        d="M8 1a7 7 0 107 7 7 7 0 00-7-7zM3 8a5 5 0 011-3l.55.55A1.5 1.5 0 015 6.62v1.07a.75.75 0 00.22.53l.56.56a.75.75 0 00.53.22H7v.69a.75.75 0 00.22.53l.56.56a.75.75 0 01.22.53V13a5 5 0 01-5-5zm6.24 4.83l2-2.46a.75.75 0 00.09-.8l-.58-1.16A.76.76 0 0010 8H7v-.19a.51.51 0 01.28-.45l.38-.19a.74.74 0 01.68 0L9 7.5l.38-.7a1 1 0 00.12-.48v-.85a.78.78 0 01.21-.53l1.07-1.09a5 5 0 01-1.54 9z"
+                      ></path></svg
+                  ></span>
+                </div>
+                <div class="followOption"><span>+</span>Follow</div>
+              </div>
+              <div class="postDescription">
+                <p>
+                  We are delighted to share that we have yet again reported
+                  double-digit revenue growth. Here's what Aiman Ezzat, CEO,
+                  Capgemini, has to say about our strong and consistent gain:
+                  <a href="#">https://bit.ly/3d2Q9sp</a>
+                </p>
+              </div>
+              <div class="postContent">
+                <img src="./images/postImg.jpg" class="postImg" />
+              </div>
+              <div class="postDetails">
+                <p>Capgemini reports 22.7% revenue growth, increases growth</p>
+                <span>thehindubusinessline.com &#8226; 2 min read</span>
+              </div>
+
+              <div class="likeCommentShareCount">
+                <div class="reactionOptionsLogos">
+                  <img
+                    class="reactionImg1 reactions-icon social-detail-social-counts__count-icon social-detail-social-counts__count-icon--0 reactions-icon__consumption--small data-test-reactions-icon-type-LIKE data-test-reactions-icon-theme-light"
+                    src="https://static-exp1.licdn.com/sc/h/8ekq8gho1ruaf8i7f86vd1ftt"
+                    alt="like"
+                    data-test-reactions-icon-type="LIKE"
+                    data-test-reactions-icon-theme="light"
+                  />
+
+                  <img
+                    class="reactionImg2 reactions-icon social-detail-social-counts__count-icon social-detail-social-counts__count-icon--1 reactions-icon__consumption--small reactions-icon--stacked data-test-reactions-icon-type-PRAISE data-test-reactions-icon-theme-light"
+                    src="https://static-exp1.licdn.com/sc/h/b1dl5jk88euc7e9ri50xy5qo8"
+                    alt="celebrate"
+                    data-test-reactions-icon-type="PRAISE"
+                    data-test-reactions-icon-theme="light"
+                  />
+
+                  <img
+                    class="reactionImg3 reactions-icon social-detail-social-counts__count-icon social-detail-social-counts__count-icon--2 reactions-icon__consumption--small reactions-icon--stacked data-test-reactions-icon-type-EMPATHY data-test-reactions-icon-theme-light"
+                    src="https://static-exp1.licdn.com/sc/h/cpho5fghnpme8epox8rdcds22"
+                    alt="love"
+                    data-test-reactions-icon-type="EMPATHY"
+                    data-test-reactions-icon-theme="light"
+                  />
+                </div>
+                <div class="noOfReactors">
+                  <p>Pooja Landage and 1,136 others</p>
+                  <p>5 comments &#8226; 4 shares</p>
+                </div>
+              </div>
+
+              <div class="horizontalLineContainer">
+                <div class="horizontalLine"></div>
+              </div>
+
+              <div class="reactionOptions">
+                <div class="likeReaction">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    data-supported-dps="24x24"
+                    fill="currentColor"
+                    class="mercado-match"
+                    width="24"
+                    height="24"
+                    focusable="false"
+                  >
+                    <path
+                      d="M19.46 11l-3.91-3.91a7 7 0 01-1.69-2.74l-.49-1.47A2.76 2.76 0 0010.76 1 2.75 2.75 0 008 3.74v1.12a9.19 9.19 0 00.46 2.85L8.89 9H4.12A2.12 2.12 0 002 11.12a2.16 2.16 0 00.92 1.76A2.11 2.11 0 002 14.62a2.14 2.14 0 001.28 2 2 2 0 00-.28 1 2.12 2.12 0 002 2.12v.14A2.12 2.12 0 007.12 22h7.49a8.08 8.08 0 003.58-.84l.31-.16H21V11zM19 19h-1l-.73.37a6.14 6.14 0 01-2.69.63H7.72a1 1 0 01-1-.72l-.25-.87-.85-.41A1 1 0 015 17l.17-1-.76-.74A1 1 0 014.27 14l.66-1.09-.73-1.1a.49.49 0 01.08-.7.48.48 0 01.34-.11h7.05l-1.31-3.92A7 7 0 0110 4.86V3.75a.77.77 0 01.75-.75.75.75 0 01.71.51L12 5a9 9 0 002.13 3.5l4.5 4.5H19z"
+                    ></path>
+                  </svg>
+                  <p>Like</p>
+                </div>
+                <div class="commentsReaction">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    data-supported-dps="24x24"
+                    fill="currentColor"
+                    class="mercado-match"
+                    width="24"
+                    height="24"
+                    focusable="false"
+                  >
+                    <path
+                      d="M7 9h10v1H7zm0 4h7v-1H7zm16-2a6.78 6.78 0 01-2.84 5.61L12 22v-4H8A7 7 0 018 4h8a7 7 0 017 7zm-2 0a5 5 0 00-5-5H8a5 5 0 000 10h6v2.28L19 15a4.79 4.79 0 002-4z"
+                    ></path>
+                  </svg>
+                  <p>Comment</p>
+                </div>
+                <div class="shareReaction">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    data-supported-dps="24x24"
+                    fill="currentColor"
+                    class="mercado-match"
+                    width="24"
+                    height="24"
+                    focusable="false"
+                  >
+                    <path
+                      d="M23 12l-4.61 7H16l4-6H8a3.92 3.92 0 00-4 3.84V17a4 4 0 00.19 1.24L5.12 21H3l-.73-2.22A6.4 6.4 0 012 16.94 6 6 0 018 11h12l-4-6h2.39z"
+                    ></path>
+                  </svg>
+                  <p>Share</p>
+                </div>
+                <div class="sendReaction">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    data-supported-dps="24x24"
+                    fill="currentColor"
+                    class="mercado-match"
+                    width="24"
+                    height="24"
+                    focusable="false"
+                  >
+                    <path
+                      d="M21 3L0 10l7.66 4.26L16 8l-6.26 8.34L14 24l7-21z"
+                    ></path>
+                  </svg>
+                  <p>Send</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="right">
+          <div class="rightContent1">
+            <div class="rightContent1Head">
+              <p>LinkedIn News</p>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 16 16"
+                data-supported-dps="16x16"
+                fill="currentColor"
+                class="mercado-match"
+                width="16"
+                height="16"
+                focusable="false"
+              >
+                <path
+                  d="M12 2H4a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2V4a2 2 0 00-2-2zm-3 8v2H7.5A1.5 1.5 0 016 10.5a1.56 1.56 0 01.1-.5l1.08-3h2.13l-1.09 3zm0-3.75A1.25 1.25 0 1110.25 5 1.25 1.25 0 019 6.25z"
+                ></path>
+              </svg>
+            </div>
+
+            <div class="rightContent1Body">
+              <ul>
+                <li>
+                  <a href="#">
+                    <div class="listItemContent">
+                      <div class="listItemBigDot"><span>&#8226;</span></div>
+                      <div class="postNameTimeView">
+                        <p>RBI hikes rates, home loans to cost more</p>
+                        <span class="postTimeReaders"
+                          >10h ago &#8226; 3,739 readers</span
+                        >
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="listItemContent">
+                      <div class="listItemBigDot"><span>&#8226;</span></div>
+                      <div class="postNameTimeView">
+                        <p>Robinhood cuts staff by 23%</p>
+                        <span class="postTimeReaders"
+                          >10h ago &#8226; 3,739 readers</span
+                        >
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="listItemContent">
+                      <div class="listItemBigDot"><span>&#8226;</span></div>
+                      <div class="postNameTimeView">
+                        <p>Monkeypox: India Updates</p>
+                        <span class="postTimeReaders"
+                          >10h ago &#8226; 3,739 readers</span
+                        >
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="listItemContent">
+                      <div class="listItemBigDot"><span>&#8226;</span></div>
+                      <div class="postNameTimeView">
+                        <p>Experion plans to hire 3,000</p>
+                        <span class="postTimeReaders" ago
+                          >10h ago &#8226; 3,739 readers</span
+                        >
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="listItemContent">
+                      <div class="listItemBigDot"><span>&#8226;</span></div>
+                      <div class="postNameTimeView">
+                        <p>Uber rides out of Zomato</p>
+                        <span class="postTimeReaders"
+                          >10h ago &#8226; 3,739 readers</span
+                        >
+                      </div>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+
+              <div class="showMoreBtnContainer">
+                Show more<svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 16 16"
+                  data-supported-dps="16x16"
+                  fill="currentColor"
+                  class="mercado-match"
+                  width="16"
+                  height="16"
+                  focusable="false"
+                >
+                  <path d="M1 5l7 4.61L15 5v2.39L8 12 1 7.39z"></path>
+                </svg>
+              </div>
+            </div>
+          </div>
+
+          <div class="rightContent2">
+            <div class="ad-threeDot">
+              <p>Ad</p>
+              <svg
+                viewBox="0 0 16 16"
+                width="16"
+                height="16"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <title>overflow-web-small</title>
+                <g>
+                  <g>
+                    <path
+                      d="M3,9.5A1.5,1.5,0,1,1,4.5,8,1.5,1.5,0,0,1,3,9.5ZM11.5,8A1.5,1.5,0,1,0,13,6.5,1.5,1.5,0,0,0,11.5,8Zm-5,0A1.5,1.5,0,1,0,8,6.5,1.5,1.5,0,0,0,6.5,8Z"
+                    ></path>
+                  </g>
+                </g>
+              </svg>
+            </div>
+            <div class="profileSuggestionHiring">
+              <div class="profileSuggestionHiringHead">
+                <p>Get the latest on jobs, news, and more</p>
+              </div>
+              <div class="profileSuggestionHiringProfileCompanyImg">
+                <div class="profile-SuggestionHiring-profilePhoto"></div>
+                <div
+                  class="profile-SuggestionHiring-suggestionCompanyImg"
+                ></div>
+              </div>
+            </div>
+            <div class="suggestedHiringCompanyName">
+              <p>Arittra, <span>aramco</span> is hiring!</p>
+            </div>
+            <div class="followBtnContainer">
+              <div class="followBtn">
+                <p>Follow</p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </body>
+</html>

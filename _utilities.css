@@ -1,0 +1,35 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: rgb(242, 242, 242);
+  scroll-behavior: smooth;
+}
+
+.bodyContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.bodyContent {
+  width: 90%;
+  margin-top: 24px;
+  display: grid;
+  grid-template-columns: 22% 46% 28%;
+  justify-content: space-between;
+}
+
+.left,
+.middle,
+.right {
+  /* background-color: var(--bodyColor); */
+  /* border: 1px solid black; */
+}
+
+.middle {
+  padding-bottom: 12px;
+}

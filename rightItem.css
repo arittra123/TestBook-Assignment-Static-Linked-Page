@@ -1,0 +1,201 @@
+:root {
+  --bodyColor: #ffffff;
+  --lightGrey: rgb(135, 135, 135);
+  --horizontalLine: rgb(235, 233, 233);
+  --countColor: rgb(58, 58, 227);
+  --divHover: rgb(232, 232, 232);
+  --navlinkcolor: rgb(121, 121, 121);
+  --searchBoxTextColor: rgba(0, 0, 0, 0.6);
+  --searchBoxBoder: rgba(0, 0, 0, 0.3);
+  --photoPostColor: #378fe9;
+  --videoPostColor: #5f9b41;
+  --eventPostColor: #c37d16;
+  --writeArticlePostColor: #e16745;
+  --followOptionColor: #0a66c2;
+  --folloHoverColor: #eef6fe;
+}
+
+.rightContent1 {
+  padding: 12px 0px;
+  border: 1.5px solid var(--horizontalLine);
+  border-radius: 8px;
+  background-color: var(--bodyColor);
+}
+
+.rightContent1Head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 12px;
+}
+
+.rightContent1Head p {
+  font-weight: 500;
+}
+
+.rightContent1Body {
+  margin-top: 6px;
+}
+
+.rightContent1Body ul {
+  list-style-type: none;
+}
+
+.rightContent1Body ul li a {
+  text-decoration: none;
+  display: flex;
+  padding: 4px 12px;
+}
+
+.rightContent1Body ul li a:hover {
+  background-color: var(--divHover);
+}
+
+.rightContent1Body ul li a p {
+  font-size: 14px;
+  font-weight: 500;
+  color: black;
+}
+
+.postTimeReaders {
+  font-size: 12px;
+  color: var(--lightGrey);
+  font-weight: 300;
+}
+
+.listItemContent {
+  /* border: 1px solid black; */
+  display: flex;
+  /* margin-left: 12px; */
+}
+
+.listItemBigDot {
+  /* border: 1px solid black; */
+  height: 50%;
+  display: flex;
+  align-items: center;
+}
+
+.listItemBigDot span {
+  font-size: 24px;
+  color: var(--searchBoxTextColor);
+}
+
+.postNameTimeView {
+  /* border: 1px solid black; */
+  margin-left: 12px;
+}
+
+.showMoreBtnContainer {
+  width: max-content;
+  margin-left: 32px;
+  margin-top: 12px;
+  padding: 2px 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  color: var(--navlinkcolor);
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.showMoreBtnContainer:hover {
+  background-color: var(--divHover);
+}
+
+.showMoreBtnContainer svg {
+  margin-left: 4px;
+}
+
+.rightContent2 {
+  background-color: var(--bodyColor);
+  border: 1.5px solid var(--horizontalLine);
+  border-radius: 8px;
+  padding: 12px;
+  margin-top: 6px;
+  position: sticky;
+  top: 24px;
+}
+
+.ad-threeDot {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.ad-threeDot p {
+  font-size: 12px;
+  margin-right: 6px;
+  font-weight: 400;
+}
+
+.profileSuggestionHiringHead {
+  font-size: 12px;
+  color: var(--navlinkcolor);
+  display: flex;
+  justify-content: center;
+  margin-top: 12px;
+}
+
+.profile-SuggestionHiring-profilePhoto {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-image: url("./images/profilePic.png");
+  background-position: center;
+  background-size: cover;
+  margin-right: 8px;
+}
+
+.profile-SuggestionHiring-suggestionCompanyImg {
+  width: 70px;
+  height: 70px;
+  background-image: url("./images/hiringImg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-left: 8px;
+}
+
+.profileSuggestionHiringProfileCompanyImg {
+  display: flex;
+  justify-content: center;
+  padding: 18px 0px;
+}
+
+.suggestedHiringCompanyName {
+  display: flex;
+  justify-content: center;
+  font-size: 16px;
+  color: var(--navlinkcolor);
+}
+
+.suggestedHiringCompanyName span {
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.9);
+}
+
+.followBtnContainer {
+  margin-top: 22px;
+  display: flex;
+  justify-content: center;
+  padding: 1px 0px;
+}
+
+.followBtn {
+  border: 1px solid #0a66c2;
+  border-radius: 16px;
+  padding: 4px 16px;
+  color: #0a66c2;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.followBtn:hover {
+  outline: 1.5px solid #0a66c2;
+  background-color: #eef6fe;
+}

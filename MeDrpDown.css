@@ -1,0 +1,161 @@
+:root {
+  --bodyColor: #ffffff;
+  --lightGrey: rgb(135, 135, 135);
+  --countColor: rgb(58, 58, 227);
+  --divHover: rgb(232, 232, 232);
+  --navlinkcolor: rgb(121, 121, 121);
+  --searchBoxTextColor: rgba(0, 0, 0, 0.6);
+  --searchBoxBoder: rgba(0, 0, 0, 0.3);
+  --photoPostColor: #378fe9;
+  --videoPostColor: #5f9b41;
+  --eventPostColor: #c37d16;
+  --writeArticlePostColor: #e16745;
+  --sortbyDividerColor: rgba(0, 0, 0, 0.08);
+  --highlightColor: rgba(0, 0, 0, 0.9);
+  --followOptionColor: #0a66c2;
+  --folloHoverColor: #eef6fe;
+  --horizontalLine: rgb(235, 233, 233);
+}
+
+.MedrpDown {
+  background-color: var(--bodyColor);
+  position: absolute;
+  margin-top: 10px;
+  width: 288px;
+  right: -25px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  border-top-left-radius: 8px;
+  box-shadow: 1px 1px 5px #ccc;
+  border: 1px solid var(--horizontalLine);
+  z-index: 99;
+  display: none;
+}
+
+.viewProfile-NavBar {
+  padding: 12px;
+  display: flex;
+  /* border: 1px solid black; */
+}
+
+.navBarProfilePhoto {
+  min-width: 72px;
+  min-height: 72px;
+  max-width: 72px;
+  max-height: 72px;
+  border-radius: 50%;
+  background-image: url("./images/profilePic.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.navBarProfileName {
+  display: flex;
+  /* border: 1px solid black; */
+  width: max-content;
+  font-weight: 500;
+  color: var(--highlightColor);
+  margin-left: 2px;
+}
+
+.navBarProfileCollege {
+  /* border: 1px solid black; */
+  margin-left: 2px;
+  margin-top: 2px;
+}
+
+.navBarProfileCollege {
+  font-size: 14px;
+  color: var(--searchBoxTextColor);
+}
+
+.navBarViewProfileBtn {
+  /* border: 1px solid black; */
+  padding: 0px 12px;
+}
+
+.navBarViewProfileBtn p {
+  border: 1.5px solid var(--followOptionColor);
+  color: var(--followOptionColor);
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.navBarViewProfileBtn p:hover {
+  background-color: var(--folloHoverColor);
+  outline: 1px solid var(--followOptionColor);
+}
+
+.MedrpDown .horizontalLineContainer {
+  padding: 0px;
+  margin-top: 8px;
+}
+
+.MeDrpDownAccount {
+  padding: 12px;
+  border-bottom: 1.5px solid var(--horizontalLine);
+}
+
+.MeDrpDownAccount-Head {
+  font-weight: 500;
+  color: var(--highlightColor);
+}
+
+.MeDrpDownAccount-tryPremium a {
+  display: flex;
+  align-items: center;
+  padding: 8px 0px;
+  text-decoration: none;
+  font-size: 14px;
+  color: var(--lightGrey);
+  font-weight: 500;
+}
+
+.MeDrpDownAccount-tryPremium a p {
+  margin-left: 4px;
+}
+
+.MeDrpDownAccount-tryPremium a:hover {
+  color: var(--followOptionColor);
+}
+
+.MeDrpDownAccount-options a {
+  text-decoration: none;
+  display: block;
+  padding: 4px 0px;
+  font-size: 14px;
+  color: var(--lightGrey);
+}
+
+.MeDrpDownAccount-options a:hover {
+  text-decoration: underline;
+}
+
+.MeDrpDown-Manage {
+  padding: 12px;
+  border-bottom: 1.5px solid var(--horizontalLine);
+}
+
+.MeDrpDown-signOut {
+  padding: 8px;
+}
+
+.MeDrpDown-signOut a {
+  text-decoration: none;
+  display: block;
+  font-size: 14px;
+  color: var(--lightGrey);
+}
+
+.MeDrpDown-signOut a:hover {
+  text-decoration: underline;
+}
+
+.profile:hover + .MedrpDown {
+  display: block;
+}
